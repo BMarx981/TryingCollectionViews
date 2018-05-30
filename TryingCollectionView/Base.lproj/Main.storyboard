@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--New Collection View Controller-->
+        <!--Happy Sad App-->
         <scene sceneID="pwu-eT-FFt">
             <objects>
                 <collectionViewController id="AnL-jr-AUl" customClass="NewCollectionViewController" customModule="TryingCollectionView" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,7 +65,7 @@
                             <outlet property="delegate" destination="AnL-jr-AUl" id="QXR-8R-jkR"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="H75-l2-oLh"/>
+                    <navigationItem key="navigationItem" title="Happy Sad App" id="H75-l2-oLh"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orG-yS-30b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +76,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m98-op-Uwl" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="49t-bS-AOb">
+                    <navigationBar key="navigationBar" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="49t-bS-AOb">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

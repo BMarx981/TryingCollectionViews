@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "cellId"
 
-class NewCollectionViewController: UICollectionViewController {
+class NewCollectionViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     var isHappy = true
     override func viewDidLoad() {
@@ -73,6 +73,13 @@ class NewCollectionViewController: UICollectionViewController {
         cell.image?.image = isHappy ? #imageLiteral(resourceName: "Happy") : #imageLiteral(resourceName: "Sad")
         isHappy = !isHappy
         return cell
+    }
+    
+    //MARK: UICollectionViewDelegateFlowlayout
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let screenWidth = CGFloat(view.frame.size.width) - 16
+        let screenHeight = CGFloat(screenWidth * 1.5)
+        return CGSize(width: screenWidth, height: screenHeight)
     }
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
